@@ -1,3 +1,5 @@
+import { AiFillStar} from "react-icons/ai";
+
 const TopWriter = () => {
   return (
     <div className="bg-slate-300 p-5 my-10">
@@ -23,7 +25,7 @@ const TopWriter = () => {
         </div>
       </div>
       <div className="col-span-2 p-10">
-        <h2 className="text-4xl font-semibold">Top Author Books</h2>
+        <h2 className="text-4xl font-semibold">Popular Author Books</h2>
         <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           <div className="card bg-base-100 shadow-xl">
             <figure>
@@ -35,6 +37,13 @@ const TopWriter = () => {
             </figure>
             <div className="card-body">
               <h2 className="font-bold text-xl">প্রোগ্রামিংয়ের চৌদ্দগোষ্ঠী </h2>
+              <div className="flex text-orange-300 gap-1">
+              <AiFillStar></AiFillStar>
+              <AiFillStar></AiFillStar>
+              <AiFillStar></AiFillStar>
+              <AiFillStar></AiFillStar>
+              <AiFillStar></AiFillStar>
+              </div>
             </div>
           </div>
           <div className="card bg-base-100 shadow-xl">
@@ -47,6 +56,13 @@ const TopWriter = () => {
             </figure>
             <div className="card-body">
               <h2 className="font-bold text-xl">প্রোগ্রামিংয়ের বলদ টু বস </h2>
+              <div className="flex text-orange-300 gap-1">
+              <AiFillStar></AiFillStar>
+              <AiFillStar></AiFillStar>
+              <AiFillStar></AiFillStar>
+              <AiFillStar></AiFillStar>
+              <AiFillStar></AiFillStar>
+              </div>
             </div>
           </div>
           <div className="card bg-base-100 shadow-xl">
@@ -59,6 +75,13 @@ const TopWriter = () => {
             </figure>
             <div className="card-body">
               <h2 className="card-title">প্যারাময় লাইফের প্যারাসিটামল </h2>
+              <div className="flex text-orange-300 gap-1">
+              <AiFillStar></AiFillStar>
+              <AiFillStar></AiFillStar>
+              <AiFillStar></AiFillStar>
+              <AiFillStar></AiFillStar>
+              <AiFillStar></AiFillStar>
+              </div>
             </div>
           </div>
         </div>
