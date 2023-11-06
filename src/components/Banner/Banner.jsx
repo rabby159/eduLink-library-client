@@ -54,7 +54,7 @@ const Banner = () => {
             <img 
             className=""
               src={
-                "https://i.ibb.co/SQfFCtM/ey-Jid-WNr-ZXQi-Oi-Jhb-Glnbm-Fib-GV3-ZWItc-HJv-ZHVjd-Glvbi-Is-Imtle-SI6-In-Nlcn-Zp-Y2-Vz-L3-Bp-Y3-R1.png"
+                "https://i.ibb.co/Rp4z6BN/BLOG-prev-ui.png"
               }
               alt=""
             />
@@ -108,7 +108,7 @@ const Banner = () => {
             <img 
             className=""
               src={
-                "https://i.ibb.co/Rp4z6BN/BLOG-prev-ui.png"
+                "https://i.ibb.co/SQfFCtM/ey-Jid-WNr-ZXQi-Oi-Jhb-Glnbm-Fib-GV3-ZWItc-HJv-ZHVjd-Glvbi-Is-Imtle-SI6-In-Nlcn-Zp-Y2-Vz-L3-Bp-Y3-R1.png"
               }
               alt=""
             />
