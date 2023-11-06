@@ -7,7 +7,7 @@ const ErrorPage = () => {
             <img className="max-h-[90vh]" src={`https://i.ibb.co/XVgSY0D/20824299-6373669.jpg`} alt="" />
         </div>
         <div className=" flex justify-center">
-        <Link to='/'><button className="btn btn-info mb-10">Go Home</button></Link>
+        <Link to='/'><button className="btn btn-outline mb-10">Go Home</button></Link>
         </div>
         </>
     );

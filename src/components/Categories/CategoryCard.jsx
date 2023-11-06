@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 const CategoryCard = ({ category }) => {
-  const { _id, image, category_name } = category;
+  const { image, category_name } = category;
   return (
     <div>
       <div className="card card-side bg-base-100 shadow-xl mb-5">
