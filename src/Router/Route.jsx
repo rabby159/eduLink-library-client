@@ -5,6 +5,7 @@ import ErrorPage from "../page/ErrorPage/ErrorPage";
 import AddBook from "../page/AddBook/AddBook";
 import Login from "../page/Login/Login";
 import Register from "../page/Register/Register";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -20,7 +21,7 @@ const routes = createBrowserRouter([
             },
             {
                 path: 'addBook',
-                element: <AddBook></AddBook>
+                element: <PrivateRoute><AddBook></AddBook></PrivateRoute>
             }
         ]
     },
