@@ -5,7 +5,7 @@ const Books = ({ books }) => {
   const { image, bName, aName, category, rating } = books;
   return (
     <div>
-      <div className="card w-96 bg-base-100 shadow-xl">
+      <div className="card bg-base-100 shadow-xl h-[500px]">
         <figure>
           <img className="h-[300px]" src={image} alt="Shoes" />
         </figure>

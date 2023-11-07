@@ -4,6 +4,7 @@ import CategoriesBook from "./CategoriesBook";
 
 const CategoriesBooks = () => {
   const books = useLoaderData();
+  console.log(books)
 
   return (
     <div className="max-w-7xl mx-auto">
