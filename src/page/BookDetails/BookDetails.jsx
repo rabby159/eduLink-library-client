@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import Rating from "react-rating";
 import { AiFillRightCircle, AiFillTags, AiOutlineUsergroupAdd } from "react-icons/ai";
@@ -6,15 +6,15 @@ import { AiFillRightCircle, AiFillTags, AiOutlineUsergroupAdd } from "react-icon
 const BookDetails = () => {
   const details = useLoaderData();
 
-  const { image, bName, quantity, aName, category, description, rating } =
+  const { _id, image, bName, quantity, aName, category, rating } =
     details;
 
   return (
     <div className="max-w-7xl mx-auto">
       <Navbar></Navbar>
-      <div className="card card-side bg-base-100 shadow-xl my-10 h-[500px]">
+      <div className="card card-side bg-base-100 shadow-xl my-10 ">
         <figure>
-          <img  src={image} alt="book" />
+          <img className="h-[500px]"  src={image} alt="book" />
         </figure>
         <div className=" p-10 space-y-3">
           <h2 className="text-5xl font-bold">{bName}</h2>
@@ -34,8 +34,8 @@ const BookDetails = () => {
             <p>Member ship fee: 100TK for lifetime</p>
           </div>
           <div className="flex gap-5 pt-10">
-            <button className="btn btn-outline w-1/2">Borrow</button>
-            <button className="btn btn-outline w-1/2">Read</button>
+            <Link to={`/borrow/${_id}`}><button className="btn btn-outline">Borrow</button></Link>
+            <Link to={`/read/${_id}`}><button className="btn btn-outline">Read</button></Link>
           </div>
         </div>
       </div>
