@@ -1,13 +1,44 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
+import useAuth from "../../hooks/useAuth";
+import Swal from "sweetalert2";
 
 const Login = () => {
+
+  const {signInUser} = useAuth();
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleSingIn = (e) => {
+    e.preventDefault();
+
+    const form = new FormData(e.currentTarget)
+
+    const email = form.get('email')
+    const password = form.get('password')
+
+    console.log(email, password)
+
+    signInUser(email, password)
+    .then(res=> {
+      console.log(res)
+      Swal.fire("Welcome!", "Login Successful", "success");
+          navigate(location?.state ? location.state : '/' );
+    })
+    .catch(err => {
+      console.log(err)
+      Swal.fire("Invalid!", "Provide right email/password", "error");
+    })
+
+  }
+
+
   return (
     <div>
         <Navbar></Navbar>
       <div className="flex justify-center items-center h-[90vh]">
         <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
-          <form className="space-y-6" action="#">
+          <form onSubmit={handleSingIn} className="space-y-6" action="#">
             <h5 className="text-xl font-medium text-gray-900 dark:text-white">
               Sign in to our platform
             </h5>

@@ -25,7 +25,7 @@ const CategoryCard = ({ category }) => {
 };
 
 CategoryCard.propTypes = {
-  category: PropTypes.node,
+  category: PropTypes.array,
 };
 
 export default CategoryCard;

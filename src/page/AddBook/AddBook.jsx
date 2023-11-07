@@ -7,15 +7,15 @@ const AddBook = () => {
     const handleAddNewBook = (e) => {
         e.preventDefault();
 
-        const form = e.target;
+        const form = new FormData(e.currentTarget);
 
-        const image = form.image.value;
-        const bName = form.bName.value; //book name
-        const quantity = form.quantity.value;
-        const aName = form.aName.value; //author name
-        const category = form.category.value;
-        const description = form.description.value;
-        const rating = form.rating.value;
+        const image = form.get('image');
+        const bName = form.get('bName'); //book name
+        const quantity = form.get('quantity');
+        const aName = form.get('aName'); //author name
+        const category = form.get('category');
+        const description = form.get('description');
+        const rating = form.get('rating');
 
 
         const newBook = {image, bName, quantity, aName, category, description, rating}
