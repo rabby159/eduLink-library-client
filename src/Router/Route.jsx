@@ -6,6 +6,7 @@ import AddBook from "../page/AddBook/AddBook";
 import Login from "../page/Login/Login";
 import Register from "../page/Register/Register";
 import PrivateRoute from "./PrivateRoute";
+import AllBook from "../page/AllBook/AllBook";
 
 
 
@@ -22,6 +23,11 @@ const routes = createBrowserRouter([
             {
                 path: 'addBook',
                 element: <PrivateRoute><AddBook></AddBook></PrivateRoute>
+            },
+            {
+                path: 'allBook',
+                element: <AllBook></AllBook>,
+                loader: () => fetch('http://localhost:5000/api/v1/newBook')
             }
         ]
     },

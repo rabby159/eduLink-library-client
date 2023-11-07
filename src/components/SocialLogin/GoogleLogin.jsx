@@ -12,10 +12,12 @@ const GoogleLogin = () => {
     const handleGoogleConnect = (media) =>{
         media()
         .then(res=> {
+            console.log(res)
             Swal.fire("Welcome!", "Login Successful", "success");
             navigate(location?.state ? location.state : '/' );
           })
         .catch(err => {
+            console.log(err)
             Swal.fire("Invalid!", "Provide right email/password", "error");
           })
     }
