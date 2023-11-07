@@ -1,4 +1,5 @@
 import Rating from "react-rating";
+import PropTypes from "prop-types";
 
 const Books = ({ books }) => {
   const { image, bName, aName, category, rating } = books;
@@ -14,12 +15,16 @@ const Books = ({ books }) => {
           <p>Category: {category}</p>
           <Rating initialRating={rating} readonly />
           <div className="card-actions justify-end">
-            <button className="btn btn-outline">Borrow Now</button>
+            <button className="btn btn-outline">Update</button>
           </div>
         </div>
       </div>
     </div>
   );
 };
+
+Books.propTypes = {
+    books: PropTypes.node
+}
 
 export default Books;
