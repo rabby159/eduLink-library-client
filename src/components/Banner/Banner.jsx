@@ -47,7 +47,7 @@ const Banner = () => {
             </div>
             <div className="mt-10">
                 <button className="btn btn-outline text-white mr-5">Add Cart</button>
-                <button className="btn btn-outline text-white">Order Now</button>
+                <button className="btn btn-outline text-white">Booked Now</button>
             </div>
           </div>
           <div className="">
@@ -74,7 +74,7 @@ const Banner = () => {
             </div>
             <div className="mt-10">
                 <button className="btn btn-outline text-white mr-5">Add Cart</button>
-                <button className="btn btn-outline text-white">Order Now</button>
+                <button className="btn btn-outline text-white">Booked Now</button>
             </div>
           </div>
           <div className="">
@@ -101,7 +101,7 @@ const Banner = () => {
             </div>
             <div className="mt-10">
                 <button className="btn btn-outline text-white mr-5">Add Cart</button>
-                <button className="btn btn-outline text-white">Order Now</button>
+                <button className="btn btn-outline text-white">Booked Now</button>
             </div>
           </div>
           <div className="">

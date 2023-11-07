@@ -37,8 +37,12 @@ const AddBook = () => {
                     icon: 'success',
                     confirmButtonText: 'Done'
                   })
+                  
             }
+            
         })
+        
+
 
     }
 
@@ -62,6 +66,7 @@ const AddBook = () => {
                 <input
                   type="text"
                   name="image"
+                  required
                   placeholder="https://"
                   className="input input-bordered input-info w-full "
                 />
@@ -75,6 +80,7 @@ const AddBook = () => {
                 <input
                   type="text"
                   name="bName"
+                  required
                   placeholder="Type here"
                   className="input input-bordered input-info w-full "
                 />
@@ -92,6 +98,7 @@ const AddBook = () => {
                 <input
                   type="number"
                   name="quantity"
+                  required
                   placeholder="0000"
                   className="input input-bordered input-info w-full "
                 />
@@ -105,6 +112,7 @@ const AddBook = () => {
                 <input
                   type="text"
                   name="aName"
+                  required
                   placeholder="Type here"
                   className="input input-bordered input-info w-full "
                 />
@@ -138,6 +146,7 @@ const AddBook = () => {
                 <input
                   type="text"
                   name="description"
+                  required
                   placeholder="description.."
                   className="input input-bordered input-info w-full "
                 />
@@ -155,6 +164,7 @@ const AddBook = () => {
                 <input
                   type="text"
                   name="rating"
+                  required
                   placeholder="rating"
                   className="input input-bordered input-info w-full "
                 />

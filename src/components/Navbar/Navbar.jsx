@@ -52,7 +52,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
         <NavLink to='/login'>Login</NavLink>
-          <a className="btn btn-outline ml-5">Sign Up</a>
+          <NavLink to='/register' className="btn btn-outline ml-5">Sign Up</NavLink>
         </div>
       </div>
     </div>
