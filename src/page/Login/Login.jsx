@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import useAuth from "../../hooks/useAuth";
 import Swal from "sweetalert2";
+import GoogleLogin from "../../components/SocialLogin/GoogleLogin";
 
 const Login = () => {
 
@@ -105,6 +106,7 @@ const Login = () => {
               </Link>
             </div>
           </form>
+          <GoogleLogin></GoogleLogin>
         </div>
       </div>
     </div>

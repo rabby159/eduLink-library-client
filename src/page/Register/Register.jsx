@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import Swal from "sweetalert2";
 import useAuth from "../../hooks/useAuth";
+import GoogleLogin from "../../components/SocialLogin/GoogleLogin";
 
 const Register = () => {
 
@@ -150,6 +151,7 @@ const Register = () => {
               </Link>
             </div>
           </form>
+          <GoogleLogin></GoogleLogin>
         </div>
       </div>
     </div>
