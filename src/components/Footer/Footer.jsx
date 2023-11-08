@@ -23,7 +23,7 @@ const Footer = () => {
           <a className="link link-hover">Privacy policy</a>
           <a className="link link-hover">Cookie policy</a>
         </nav>
-        <form>
+        <form className="hidden md:block">
           <header className="footer-title">Newsletter</header>
           <fieldset className="form-control w-80">
             <label className="label">

@@ -35,7 +35,7 @@ const Banner = () => {
         data-swiper-parallax="-23%"
       ></div>
       <SwiperSlide>
-        <div className="flex justify-around items-center">
+        <div className="flex flex-col-reverse md:flex-row md:justify-around items-center">
           <div className="">
             <div className="title" data-swiper-parallax="-300">
               New Arrival Books
@@ -46,7 +46,7 @@ const Banner = () => {
               </p>
             </div>
             <div className="mt-10">
-                <button className="btn btn-outline text-white mr-5">Add Cart</button>
+                <button className="btn btn-outline text-white mb-3 md:mb-0 mr-5">Add Cart</button>
                 <button className="btn btn-outline text-white">Booked Now</button>
             </div>
           </div>
@@ -62,7 +62,7 @@ const Banner = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="flex justify-around items-center">
+        <div className="flex flex-col-reverse md:flex-row md:justify-around items-center">
           <div className="">
             <div className="title" data-swiper-parallax="-300">
               Booked your EBooks
@@ -73,7 +73,7 @@ const Banner = () => {
               </p>
             </div>
             <div className="mt-10">
-                <button className="btn btn-outline text-white mr-5">Add Cart</button>
+                <button className="btn btn-outline text-white mb-3 md:mb-0 mr-5">Add Cart</button>
                 <button className="btn btn-outline text-white">Booked Now</button>
             </div>
           </div>
@@ -89,7 +89,7 @@ const Banner = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="flex justify-around items-center">
+        <div className="flex flex-col-reverse md:flex-row md:justify-around items-center">
           <div className="">
             <div className="title" data-swiper-parallax="-300">
               New Arrival Books
@@ -100,7 +100,7 @@ const Banner = () => {
               </p>
             </div>
             <div className="mt-10">
-                <button className="btn btn-outline text-white mr-5">Add Cart</button>
+                <button className="btn btn-outline text-white mb-3 md:mb-0 mr-5">Add Cart</button>
                 <button className="btn btn-outline text-white">Booked Now</button>
             </div>
           </div>

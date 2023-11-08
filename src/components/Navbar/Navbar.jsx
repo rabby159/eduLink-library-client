@@ -52,8 +52,8 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex items-center">
-            <img className="w-20" src={`https://i.ibb.co/z2sMpY4/Screenshot-2023-11-05-115955-removebg-preview.png`} alt="" />
-            <Link to='/' className="btn btn-ghost normal-case text-2xl">EduLink Library</Link>
+            <img className="w-14 md:w-20" src={`https://i.ibb.co/z2sMpY4/Screenshot-2023-11-05-115955-removebg-preview.png`} alt="" />
+            <Link to='/' className="normal-case text-lg md:text-2xl">EduLink Library</Link>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">

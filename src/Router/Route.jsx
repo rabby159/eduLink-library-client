@@ -51,7 +51,7 @@ const routes = createBrowserRouter([
             },
             {
                 path: 'updateBook/:id',
-                element: <UpdateBook></UpdateBook>,
+                element: <PrivateRoute><UpdateBook></UpdateBook></PrivateRoute>,
                 loader: ({params}) => fetch(`http://localhost:5000/api/v1/update/${params.id}`)
             }
 

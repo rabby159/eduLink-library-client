@@ -1,8 +1,8 @@
 const LatestBook = () => {
   return (
     <div className="max-w-7xl mx-auto my-10">
-      <div className="grid grid-cols-3 gap-5">
-        <div className="col-span-2">
+      <div className="grid md:grid-cols-3 gap-5">
+        <div className="md:col-span-2">
           <figure>
             <img
               className=""
@@ -11,7 +11,7 @@ const LatestBook = () => {
             />
           </figure>
         </div>
-        <div className="col-span-1 flex items-center">
+        <div className="md:col-span-1 flex items-center m-1">
           <div>
             <h2 className="text-4xl font-semibold mb-7">Latest <span className="text-orange-400">release</span> of <span className="text-gray-700">Shakhawat Hossain!</span></h2>
             <p className="text-xl text-justify italic">

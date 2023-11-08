@@ -72,7 +72,7 @@ const UpdateBook = () => {
                   />
                 </label>
               </div>
-              <div className="form-control md:w-1/2 ml-10">
+              <div className="form-control md:w-1/2 md:ml-10">
                 <label className="label">
                   <span className="label-text">Book Name</span>
                 </label>
@@ -110,7 +110,7 @@ const UpdateBook = () => {
                   </select>
                 </label>
               </div>
-              <div className="form-control md:w-1/2 ml-10">
+              <div className="form-control md:w-1/2 md:ml-10">
                 <label className="label">
                   <span className="label-text">Author Name</span>
                 </label>

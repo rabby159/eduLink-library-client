@@ -12,7 +12,7 @@ const BookDetails = () => {
   return (
     <div className="max-w-7xl mx-auto">
       <Navbar></Navbar>
-      <div className="card card-side bg-base-100 shadow-xl my-10 ">
+      <div className="card md:card-side bg-base-100 shadow-xl my-10 m-1">
         <figure>
           <img className="h-[500px]"  src={image} alt="book" />
         </figure>

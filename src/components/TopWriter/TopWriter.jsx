@@ -3,8 +3,8 @@ import { AiFillStar} from "react-icons/ai";
 const TopWriter = () => {
   return (
     <div className="bg-slate-300 p-5 my-10">
-        <div className="grid grid-cols-3 gap-4 max-w-7xl mx-auto">
-      <div className="col-span-1">
+        <div className="grid md:grid-cols-3 gap-4 max-w-7xl mx-auto">
+      <div className="md:col-span-1">
         <div
           className="hero h-[500px]"
           style={{
@@ -24,7 +24,7 @@ const TopWriter = () => {
           </div>
         </div>
       </div>
-      <div className="col-span-2 p-10">
+      <div className="md:col-span-2 p-10">
         <h2 className="text-4xl font-semibold">Popular Author Books</h2>
         <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           <div className="card bg-base-100 shadow-xl">

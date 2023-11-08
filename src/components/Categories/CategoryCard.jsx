@@ -5,10 +5,10 @@ const CategoryCard = ({ category }) => {
   const { image, category_name } = category;
   return (
     <div>
-      <div className="card card-side bg-base-100 shadow-xl mb-5">
+      <div className="card md:card-side bg-base-100 shadow-xl mb-5 m-1">
         <figure>
           <img
-          className="w-[200px] h-[200px]"
+          className="md:w-[200px] md:h-[200px]"
             src={image}
             alt="Movie"
           />
