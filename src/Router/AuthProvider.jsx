@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import auth from "../Config/Firebase.config";
+import axios from "axios";
 
 export const AuthContext = createContext();
 const googleProvider = new GoogleAuthProvider();
@@ -42,6 +43,13 @@ const AuthProvider = ({children}) => {
             // console.log(currentUser)
             setUser(currentUser);
             setLoading(false)
+            if(currentUser){
+                const {loggedUser} = {email: currentUser.email}
+                axios.post('https://edu-link-library-server.vercel.app/jwt', loggedUser, { withCredentials: true })
+                .then(res => {
+                    console.log('token response', res.data)
+                })
+            }
         });
         return() => {
             unSubscribe();

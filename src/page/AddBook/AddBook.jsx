@@ -21,7 +21,7 @@ const AddBook = () => {
         const newBook = {image, bName, quantity, aName, category, description, rating}
         // console.log(newBook)
 
-        fetch('http://localhost:5000/api/v1/addBook', {
+        fetch('https://edu-link-library-server.vercel.app/api/v1/addBook', {
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'

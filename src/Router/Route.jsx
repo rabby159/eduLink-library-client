@@ -31,28 +31,28 @@ const routes = createBrowserRouter([
             {
                 path: 'allBook',
                 element: <PrivateRoute><AllBook></AllBook></PrivateRoute>,
-                loader: () => fetch('http://localhost:5000/api/v1/newBook')
+                loader: () => fetch('https://edu-link-library-server.vercel.app/api/v1/newBook')
             },
             {
                 path: 'relevantBooks/:category',
                 element: <CategoriesBooks></CategoriesBooks>,
-                loader: ({params}) => fetch(`http://localhost:5000/api/v1/newBook/${params.category}`) 
+                loader: ({params}) => fetch(`https://edu-link-library-server.vercel.app/api/v1/newBook/${params.category}`) 
 
             },
             {
                 path: 'details/:id', 
                 element: <PrivateRoute><BookDetails></BookDetails></PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/api/v1/details/${params.id}`)
+                loader: ({params}) => fetch(`https://edu-link-library-server.vercel.app/api/v1/details/${params.id}`)
             },
             {
                 path: 'read/:id',
                 element: <PrivateRoute><Read></Read></PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/api/v1/describe/${params.id}`)
+                loader: ({params}) => fetch(`https://edu-link-library-server.vercel.app/api/v1/describe/${params.id}`)
             },
             {
                 path: 'updateBook/:id',
                 element: <PrivateRoute><UpdateBook></UpdateBook></PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/api/v1/update/${params.id}`)
+                loader: ({params}) => fetch(`https://edu-link-library-server.vercel.app/api/v1/update/${params.id}`)
             }
 
 

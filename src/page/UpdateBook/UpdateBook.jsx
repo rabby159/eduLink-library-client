@@ -23,7 +23,7 @@ const UpdateBook = () => {
         const updateBook = {image, bName, aName, category, rating};
 
 
-        fetch(`http://localhost:5000/api/v1/update/${_id}`, {
+        fetch(`https://edu-link-library-server.vercel.app/api/v1/update/${_id}`, {
             method: "PUT",
           headers: {
             "content-type": "application/json",

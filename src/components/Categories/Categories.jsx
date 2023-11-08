@@ -5,7 +5,7 @@ const Categories = () => {
   const [categories, setCategories] = useState();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/v1/categories`)
+    fetch(`https://edu-link-library-server.vercel.app/api/v1/categories`)
       .then((res) => res.json())
       .then((data) => setCategories(data));
   }, []);
