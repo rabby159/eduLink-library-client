@@ -1,8 +1,11 @@
 import Rating from "react-rating";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const Books = ({ books }) => {
-  const { image, bName, aName, category, rating } = books;
+
+  const {_id, image, bName, aName, category, rating } = books;
+
   return (
     <div>
       <div className="card bg-base-100 shadow-xl h-[500px]">
@@ -15,7 +18,9 @@ const Books = ({ books }) => {
           <p>Category: {category}</p>
           <Rating initialRating={rating} readonly />
           <div className="card-actions justify-end">
-            <button className="btn btn-outline">Update</button>
+            <Link to={`/updateBook/${_id}`}>
+              <button className="btn btn-outline">Update</button>
+            </Link>
           </div>
         </div>
       </div>

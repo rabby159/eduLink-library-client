@@ -10,6 +10,7 @@ import AllBook from "../page/AllBook/AllBook";
 import CategoriesBooks from "../page/CategoriesBooks/CategoriesBooks";
 import BookDetails from "../page/BookDetails/BookDetails";
 import Read from "../page/Read/Read";
+import UpdateBook from "../page/UpdateBook/UpdateBook";
 
 
 
@@ -45,9 +46,15 @@ const routes = createBrowserRouter([
             },
             {
                 path: 'read/:id',
-                element: <Read></Read>,
+                element: <PrivateRoute><Read></Read></PrivateRoute>,
                 loader: ({params}) => fetch(`http://localhost:5000/api/v1/describe/${params.id}`)
+            },
+            {
+                path: 'updateBook/:id',
+                element: <UpdateBook></UpdateBook>,
+                loader: ({params}) => fetch(`http://localhost:5000/api/v1/update/${params.id}`)
             }
+
 
         ]
     },
